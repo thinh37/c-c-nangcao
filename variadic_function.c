@@ -12,12 +12,12 @@ double tong(int n, ...){
        float temp=va_arg(ptr,double);
        	if(temp!=0.0){
        	
-       		sum =sum + temp;
-		}
-		else{
-		   	ptr=ptr-sizeof(ptr);
-		   	sum =sum +va_arg(ptr,int);
-		   }
+            	sum =sum + temp;
+	}
+	else{
+		ptr=ptr-sizeof(ptr);
+		sum =sum +va_arg(ptr,int);
+	}
     }
     return sum;
 }
