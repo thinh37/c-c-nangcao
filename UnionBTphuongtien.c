@@ -185,7 +185,7 @@ int main(int argc, char const *argv[])
     
     Chuong_Trinh_Chon_Duong(&phuong_tien);
 
-    printf("uurhur%d",phuong_tien);
+    
     Hien_Thi_Gia(phuong_tien);
 
     
