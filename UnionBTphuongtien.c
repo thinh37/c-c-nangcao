@@ -58,10 +58,12 @@ void duong_hang_khong(phuong_tien_giao_thong *phuong_tien){
         phuong_tien->duong_hang_khong.may_bay_truc_thang = MAY_BAY_TRUC_THANG;
         break;
     default:
+    	Chuong_Trinh_Chon_Duong(&phuong_tien);
         break;
     }
 }
 void duong_bo(phuong_tien_giao_thong *phuong_tien){
+	
     printf("######################\n");
     printf("Ban da chon duong bo!!!!");
     printf("Vui long chon loai phuong tien\n");
@@ -86,6 +88,7 @@ void duong_bo(phuong_tien_giao_thong *phuong_tien){
         phuong_tien->duong_bo.xe_may = XE_MAY;
         break;
     default:
+    	Chuong_Trinh_Chon_Duong(&phuong_tien);
         break;
     }
 }
@@ -109,10 +112,12 @@ void duong_thuy(phuong_tien_giao_thong *phuong_tien){
         phuong_tien->duong_thuy.ca_no = CANO;
         break;
     default:
+    	Chuong_Trinh_Chon_Duong(&phuong_tien);
         break;
     }
 }
 void Chuong_Trinh_Chon_Duong(phuong_tien_giao_thong *phuong_tien){
+	back:
     printf("Ban muon di chuyen bang duong nao?\n");
     printf("Nhan 1: Duong Hang Khong\n");
     printf("Nhan 2: Duong Bo\n");
